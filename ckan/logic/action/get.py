@@ -3562,4 +3562,4 @@ def api_token_list(context, data_dict):
 def config_declaration_show(context, data_dict):
     _check_access("config_declaration_show", context, data_dict)
 
-    return str(config_declaration)
+    return config_declaration.into_ini())
